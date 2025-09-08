@@ -45,7 +45,7 @@ function App() {
       {
         role: "system",
         content:
-          "You are a visual captioning assistant. For the given image, summarize only the key subjects and salient objects or actions that define the main event or scene. Ignore minor background details. Keep description clear, concise, and focused on what stands out most.",
+          "You are a visual storytelling AI. Analyze the central character in the image including their mood, facial expression, body language, and current actions. Describe what the character might be feeling or thinking and how they relate to the scene. Provide an insightful and evocative summary capturing emotion and intent, as well as key visual details of the scene.",
       },
       {
         role: "user",
@@ -91,8 +91,7 @@ function App() {
     if (!API_KEY) throw new Error("Dobby API key is missing");
 
     const systemPrompt = `
-You are CaptionDobby. Given a visual scene description, create a ${tone}, meme-worthy caption in 25 words or less.
-Make it clever and instantly shareable.
+You are CaptionDobby. Given a detailed visual description of a character’s mood, actions, and scene, create a ${tone}, creative caption in 25 words or less. Capture the emotion and intent while keeping it clever and shareable.
 `;
 
     const messages = [

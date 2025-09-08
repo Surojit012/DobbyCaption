@@ -45,7 +45,7 @@ function App() {
       {
         role: "system",
         content:
-          "You are a smart vision assistant. Describe the main scene and subject of this image clearly. Avoid mentioning QR codes or scanning elements unless absolutely visible.",
+          "You are a visual captioning assistant. For the given image, summarize only the key subjects and salient objects or actions that define the main event or scene. Ignore minor background details. Keep description clear, concise, and focused on what stands out most.",
       },
       {
         role: "user",
